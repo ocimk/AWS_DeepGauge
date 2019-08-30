@@ -48,7 +48,7 @@ def convert_to(data_set, name, directory):
 ########## TRAINING DATASET ####################################################
 '''
 dim = (28, 28)
-TRAIN_DIR = "./ImageEveryUnit"
+TRAIN_DIR = "/Users/mehdi/Desktop/Projects/DeepGauge/ImageEveryUnit"
 ALLFOLDERS = os.listdir(TRAIN_DIR)
 Folders = [x for x in ALLFOLDERS if x.startswith('psi')]
 Folder_Dict = dict([(y,x) for x,y in enumerate(sorted(set(Folders)))])
