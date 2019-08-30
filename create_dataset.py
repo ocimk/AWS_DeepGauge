@@ -8,6 +8,7 @@ import pickle
 from itertools import chain
 from sklearn.model_selection import train_test_split
 
+
 def _int64_feature(value):
     return tf.train.Feature(int64_list=tf.train.Int64List(value=[value]))
 
@@ -118,3 +119,12 @@ with open('./data/test_dataset.pickle', 'wb') as handle:
 
 # for example in tf.python_io.tf_record_iterator("./data/test.tfrecords"):
 #     print(tf.train.Example.FromString(example))
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
+from tensorflow.examples.tutorials.mnist import input_data
+mnist = input_data.read_data_sets("/tmp/data/", one_hot=True)
+data = mnist.test.images[0].tolist()
+
+mnist.test.images[0].shape
+((test_dataset['images'][0])/255).reshape([28*28, ]).tolist().shape
