@@ -9,7 +9,7 @@ Steps that are followed in this repositpry are as follows:
 
 - Create a training job using the sagemaker.TensorFlow estimator
 
-- Deploy the trained model to prepare for predictions (the old way)¶
+- Deploy the trained model to prepare for predictions (the old way)
 
 - Deploy the trained model using Neo
 
