@@ -113,9 +113,9 @@ with open('./data/test_dataset.pickle', 'wb') as handle:
 
 
 
-# # Load data (deserialize)
-# with open('./data/test_dataset.pickle', 'rb') as handle:
-#     unserialized_data = pickle.load(handle)
+# Load data (deserialize)
+with open('./data/label_dict.pickle', 'rb') as handle:
+    unserialized_data = pickle.load(handle)
 
 # for example in tf.python_io.tf_record_iterator("./data/test.tfrecords"):
 #     print(tf.train.Example.FromString(example))
